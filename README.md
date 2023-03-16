@@ -29,7 +29,7 @@ services.AddAuthentication(options =>
             ValidateIssuer = true
         };
     });
-```
+``` 
 
 Then, you'll be able to disable implicit grant on your application registration auth configuration
 ![Disable implicit grand](https://raw.githubusercontent.com/juligu/authcodenetcore/master/doc/images/implicitG2.jpg)
