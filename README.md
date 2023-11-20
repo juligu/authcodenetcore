@@ -3,7 +3,7 @@
 When creating a new dotnet application using Azure AD Authentication the implicit auth flow is used by default, according to the documentation you should prefer the auth code flow instead [Prefer the auth code flow](https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-oauth2-implicit-grant-flow#prefer-the-auth-code-flow) 
 ![By default Implicit Grant is preferred](https://raw.githubusercontent.com/juligu/authcodenetcore/master/doc/images/implicitG1.jpg)
 
-In order to make your application work with auth code flow instead you should make some small changes to the Startup class, ConfigureServices method :
+In order to make your application work with auth code flow instead you should make some small changes to the Startup class, ConfigureServices method:
 ```c#
 services.AddAuthentication(options =>
 {
